@@ -6,7 +6,7 @@ if len(argv) != 4:
     print('USAGE: python3 project.py <password> <input_file> <output_file>')
     exit()
 
-if argv[1].isalnum():
+if not (argv[1].isalnum()):
     print('ERROR: Password must be a string with lowercase or uppercase letters or numbers.')
     exit()
 
