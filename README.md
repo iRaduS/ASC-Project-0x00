@@ -1,5 +1,6 @@
 # Rezolvare partea a II-a
 **Parola echipei adverse: xt987wdfdvKc**
+
 [Repository echipa adversa](https://github.com/iuliali/xor-encryption)
 
 # Introducere
