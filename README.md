@@ -1,3 +1,7 @@
+# Rezolvare partea a II-a
+**Parola echipei adverse: xt987wdfdvKc**
+[Repository echipa adversa](https://github.com/iuliali/xor-encryption)
+
 # Introducere
 **Cerința proiectului:** Scrieți scripturi python encrypt.py/decrypt.py care iau ca parametru în linia de comandă o cheie și un
 fișier și realizează criptarea/decriptarea XOR folosind cheia dată. Programul va folosi cheia pentru a
