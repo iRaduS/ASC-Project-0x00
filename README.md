@@ -34,13 +34,13 @@ cripta conținutul fișierului.
 ---
 
 ### Membrii echipei
-**Florea George (grupa 142)** - responsabil pentru documentaţie
+**Florea George (grupa 142)** - responsabil pentru documentaţie, contribuţii pe partea II.1
 
-**Stanciu Sergiu-Nicolas (grupa 142)** - responsabil de testarea funcţionalităţii
+**Stanciu Sergiu-Nicolas (grupa 142)** - responsabil de testarea funcţionalităţii, contribuţii pe partea II.1
 
-**Teleagă Dragoş (grupa 142)** - responsabil pentru găsirea articolelor ce se regăsesc in partea dedicată a acestei documentaţii
+**Teleagă Dragoş (grupa 142)** - responsabil pentru găsirea articolelor ce se regăsesc in partea dedicată a acestei documentaţii, contribuţii pe partea II.2 (conceptul de trust-factor)
 
-**Vrînceanu Radu-Tudor (grupa 142)** - responsabil pentru git şi partea de cod
+**Vrînceanu Radu-Tudor (grupa 142)** - responsabil pentru git şi partea de cod, contribuţii pe partea II.2 (ideea de paralelizare a algoritmului)
 
 ---
 
