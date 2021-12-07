@@ -26,5 +26,3 @@ jobs:
           
       - name: Test
         uses: onichandame/python-test-action@master
-        with:
-          test_dir: 'tests'
