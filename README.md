@@ -1,7 +1,21 @@
 # Rezolvare partea a II-a
+
+Nume echipă adversă: **three haXORs**
+
 **Parola echipei adverse: xt987wdfdvKc**
 
 [Repository echipa adversa](https://github.com/iuliali/xor-encryption)
+
+---
+
+### Partea II.1 (preluarea parolei pe baza inputului)
+Am folosit un script de python prin care am extras parola folosindu-ne de input şi de faptul ca XOR este comutativă
+```
+input_byte ^ password_byte = output_byte => password_byte = input_file_byte ^ output_byte
+```
+Scriptul utilizat se găseşte în cadrul acestui repository şi se numeşte **cracker_with_input.py**.
+
+---
 
 # Introducere
 **Cerința proiectului:** Scrieți scripturi python encrypt.py/decrypt.py care iau ca parametru în linia de comandă o cheie și un
