@@ -1,19 +1,28 @@
 # Rezolvare partea a II-a
 
-Nume echipă adversă: **three haXORs**
-
 **Parola echipei adverse: xt987wdfdvKc**
 
-[Repository echipa adversa](https://github.com/iuliali/xor-encryption)
+[**three haXORs** - echipa adversă](https://github.com/iuliali/xor-encryption)
 
 ---
 
 ### Partea II.1 (preluarea parolei pe baza inputului)
-Am folosit un script de python prin care am extras parola folosindu-ne de input şi de faptul ca XOR este comutativă
+Am folosit un script de python prin care am extras parola folosindu-ne de input şi de faptul ca XOR este comutativă, generând primele 30 de caractere din parolă, ştiind că dimensiunea maximă a parolei poate fi de 15 caractere, pentru verificarea corectitudinii.
 ```
 input_byte ^ password_byte = output_byte => password_byte = input_file_byte ^ output_byte
 ```
 Scriptul utilizat se găseşte în cadrul acestui repository şi se numeşte **cracker_with_input.py**.
+
+---
+
+### Partea II.2 (preluarea parolei doar pe baza outputului)
+**Trust-Factor heuristic algorithm**
+
+Pentru a eficientiza algoritmul de brute-force echipa noastră a propus sa se creeze cate un thread nou pentru fiecare lungime de parola de la 10-15 (în total 6 fire de execuţie). Fiecare thread porneşte cu o metodă care oferă o parolă pentru lungimea propusă **(!) Metoda folosită este una ESTIMATIVĂ, întrucât se bazează pe faptul că principalele caractere (sau cele majoritare) sunt litere mici şi bineînţeles anumite semne ortografice şi de punctuaţie**. Datorită faptului că ştim componenţa parolei (este formată din A-Za-z0-9 vom itera prin caracterele textului encriptat si prin **posibilele caractere** din parolă, la fiecare pas obţinându-se un **caracter pseudo-input**).
+
+Acest **caracter pseudo-input** trebuie să se regăsească printre cele mai utilizate caractere. Dacă este cazul, atunci se incrementează într-o "frecvenţă" (care reţine pentru fiecare poziţie (caracter) din parolă şi fiecare caractere posibile trust factor-ul asociat pe criteriul menţionat anterior). La final pentru fiecare poziţie (caracter) din parolă se aleg cheile (caracterele) corespunzătoare maximelor locale din frecvenţa anterioară.
+
+Scriptul utilizat se găseşte în cadrul acestui repository şi se numeşte **cracker_without_input.py**.
 
 ---
 
