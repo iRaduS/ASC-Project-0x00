@@ -9,8 +9,8 @@ with open('output', 'rb') as outputFile, open('input.txt', 'rb') as inputFile:
     inputFileBytes = bytearray(inputFile.read())
 
     """
-    # Daca parola are dimensiunea de 15 caractere vom face 2 ciclii
-    # pentru a ne asigura ca se repeta aceeasi parola
+    # Daca parola are dimensiunea maxima de 15 caractere vom face 2 ciclii (vom parcurge primele 30 de caractere)
+    # pentru a ne asigura ca se repeta aceleasi caractere din parola
     """
     for i in range(0, 30):
         for letter in password_contents:
